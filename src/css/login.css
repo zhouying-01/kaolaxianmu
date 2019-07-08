@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#docHead{
+	border-bottom:1px solid #e8e8ea;
+	height:100px;
+	background:#fff;
+	z-index:103;
+}
+#docHeadWrap{
+	width:1000px;
+	height:100px;
+    margin:0 auto;
+    position: relative;
+}
+#docHead .logokaola {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 330px;
+    height: 65px;
+    line-height: 65px;
+    cursor: pointer;
+    z-index: 9;
+    background: url(../img/logo.png) no-repeat left center;
+}
+#topimg {
+    position: absolute;
+    left: 458px;
+    height: 100px;
+    width: 504px;
+    background: url(../img/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+/* 登录栏css */
+.login-banner {
+    background-color: #f8f8f8;
+}
+.login-body {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+.hot-area{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 400px;
+    height: 203px;
+}
+/* 登录框CSS */
+.reg{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 40px;
+    width: 350px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    border: 1px solid #eaeaea;
+}
+.regtop{
+    position: relative;
+    width: 350px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+.tel,.email{
+    height: 52px;
+    width: 175px;
+    text-align: center;
+    font-weight: bolder
+}
+.regtop .tel{
+    float: left;
+}
+.regtop .email{
+    float: right;
+}
+
+.m-cnt{
+    padding: 20px 40px 15px 40px;
+    background-color: #fff;
+}
+.m-cnt p input{
+    line-height: 36px;
+    border-radius: 2px;
+    padding-left:39px;
+    width: 231px;
+    height: 34px;
+    border: 1px solid #c5cddb;
+}
+.m-cnt input:nth-child(1){
+    background: url(../img/6315f6c8-5227-4ca5-9e45-e21557db8eb5_84_125.png) no-repeat -55px -26px;
+}
+.m-cnt p:nth-child(2){
+    margin: 16px 0px 24px 0px;
+}
+#dologin{
+    height: 36px;
+    background-color: #E31436;
+    color: #fff;
+    border-radius: 2px;
+    line-height: 36px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#auto-id{
+    height: 31px;
+    margin-top:8px;
+    color: #999;
+}
+.un-login{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.b-unlogn{
+    float: left;
+    width: 120px;
+    height: 16px;
+}
+#auto-id .forgetpwd{
+    float: right;
+    color: #999;
+}
+.proto{
+    color: #999;
+}
+.proto a{
+    color: #999;
+}
+
+.bottom{
+    padding: 10px 40px;
+    width: 270px;
+    height: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+.bottom ul{
+    float: left;
+    width: 160px;
+}
+.bottom ul li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+.bottom .gotoreg{
+    display: block;
+    float: right;
+    width: 105px;
+    line-height: 22px;
+    cursor: pointer;
+    color: #e31436;
+}
+.w-icon{
+    display: inline-block;
+ width: 22px;
+  height: 22px;
+    background: url(../img/e38ed041-797a-4cb9-bfcb-b2c08d6bfaa2_979_797.png)
+}
+.w-icon-26{
+background-position: -760px -401px;
+}
+.w-icon-27{
+    background-position: -792px -401px;
+}
+.w-icon-28{
+    background-position: -824px -401px;
+}
+.w-icon-29{
+    background-position: -856px -401px;
+}
+.w-icon-30{
+    width: 14px;
+    height: 14px;
+    background-position: -899px -406px;
+    vertical-align: middle;
+}
+
+/* 手机登录 */
+#telphone .inputbox{
+       width:132px;
+}
+#telphone .getsm{
+    height: 36px;
+    width: 96px;
+    line-height: 32px;
+    background-color: #eee;
+    border-left: #d5d5d5 solid 1px;
+    display: block;
+    float: right;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+ #telphone .getsm:hover{
+color: #e31436;
+background-color: #f6f6f6;
+}

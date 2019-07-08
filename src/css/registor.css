@@ -1,0 +1,155 @@
+/* 顶部css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none
+}
+#docHead{
+	border-bottom:1px solid #e8e8ea;
+	height:100px;
+	background:#fff;
+	z-index:103;
+}
+#docHeadWrap{
+	width:1000px;
+	height:100px;
+    margin:0 auto;
+    position: relative;
+}
+#docHead .logokaola {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 330px;
+    height: 65px;
+    line-height: 65px;
+    cursor: pointer;
+    z-index: 9;
+    background: url(../img/logo.png) no-repeat left center;
+}
+#topimg {
+    position: absolute;
+    left: 458px;
+    height: 100px;
+    width: 504px;
+    background: url(../img/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+/* 登录栏css */
+.login-banner {
+    background-color: #f8f8f8;
+}
+.login-body {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+.hot-area{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 400px;
+    height: 203px;
+}
+/* 登录框CSS */
+.reg{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 40px;
+    width: 350px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    border: 1px solid #eaeaea;
+}
+.regtop{
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 0 40px;
+    width: 270px;
+}
+.regtop .text{
+    font-weight: 700;
+    color: #e31436;
+}
+.regtop .gotologin{
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+}
+.regtop .gotologin a{
+    color: #51b8f1;
+}
+.m-cnt{
+    padding: 20px 0px 10px 0px;
+    background-color: #fff;
+}
+
+p{
+    margin: 0px 0px 12px 0px
+}
+p:nth-child(6){
+    margin: 0px;
+}
+label{
+    text-align: right;
+    width: 80px;
+    display: inline-block;
+    font-size: 12px;
+}
+label>span{
+    color: red
+}
+.span{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    vertical-align: top;
+    line-height: 28px
+}
+.pic{
+    margin-left: 80px;
+    width: 100px;
+    height: 24px;
+    line-height:24px
+
+}
+input{
+    height: 20px;
+    width: 146px;
+}
+.oBox{
+    display: inline-block;
+    width: 80px;
+    height: 26px;
+    vertical-align: top;
+    color: red;
+    font-weight: bolder;
+    font-size: 20px
+}
+input:last-child{
+    color: #ffffff;
+    border: none;
+    background-color: red;
+    height: 30px;
+    width: 250px;
+    cursor: pointer;
+    margin: 5px 0 0 27px;
+}
+b{
+    font-size: 12px;
+    font-weight: normal;
+    color:black
+}
+a{
+    font-size: 12px;
+    color: blue
+}
+.yzm{
+    width: 70px
+}
