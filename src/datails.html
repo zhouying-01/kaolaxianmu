@@ -252,7 +252,7 @@
                         </li>
                     </ul>
                 </div>
-                <a target="_blank" href="#" data-param="from=navigation&amp;zn=top"
+                <a target="_blank" href="cart.html" data-param="from=navigation&amp;zn=top"
                     rel="nofollow" class="m-shopcartnew f-hkdn m-shopcartnew-1" _ti="1">
                     <i class="shop-cart-icon" _ti="1"></i><span class="wrap" _ti="1">购物车<b class="num" id="newcartnum"
                             style="" _ti="1">1</b></span>
@@ -443,7 +443,8 @@
 
 
         <!-- 详情栏 -->
-        <div id="j-producthead" _ti="5"><!--inlcude-->
+        <div style="width: 100%;background: white">
+        <div id="j-producthead" _ti="5" style="width: 1090px;margin: auto;background: white"><!--inlcude-->
     
     
     
@@ -454,54 +455,25 @@
                 <div class="PInfoWrap clearfix" _ti="37">
                     
                     <div class="PImgBox m-productimgbox" _ti="37">
-                <a hidefocus="true" class="scrollBtn scrollleft sign icon-arrow-left scrollDis" href="javascript:void(0);" _ti="37"></a>
-                <a hidefocus="true" class="scrollBtn scrollRight sign icon-arrow-right scrollDis" href="javascript:void(0);" _ti="37"></a>
+                <a hidefocus="true" class="scrollBtn scrollleft sign icon-arrow-left scrollDis" href="javascript:void(0);" _ti="37" style="border:1px solid #eee">&lt;</a>
+                <a hidefocus="true" class="scrollBtn scrollRight sign icon-arrow-right scrollDis" href="javascript:void(0);" _ti="37" style="border:1px solid #eee;">&gt;</a>
                 <div class="litimg_box" _ti="37">
                     <ul class="clearfix" id="litimgUl" _ti="37" style="left: 0px; width: 3200px;">
                         <!--Regular list-->
-                        <li id="auto-id-1562548741532" class="" _ti="37">
-                            <a href="javascript:;" _ti="37">
-                                <img src="" _ti="37">
-                            </a>
-                        </li>
-                        
-                        <li id="auto-id-1562548741533" class="" _ti="37">
-                            <a href="javascript:;" _ti="37">
-                                <img src="" _ti="37">
-                            </a>
-                        </li>
-                        
-                        <li id="auto-id-1562548741534" class="" _ti="37">
-                            <a href="javascript:;" _ti="37">
-                                <img src="" _ti="37">
-                            </a>
-                        </li>
-                        
-                        <li id="auto-id-1562548741535" class="active" _ti="37">
-                            <a href="javascript:;" _ti="37">
-                                <img src="" _ti="37">
-                            </a>
-                        </li>
                         
                     </ul>
                 </div>
-                <div id="showImgBox" _ti="37">
-                    
+                <div id="showImgBox" _ti="37" class="spic">
                     <!--Regular if9-->
-                    <img src="" _ti="37">
-                    <b class="shadow" _ti="37" style="top: 173px; left: 0px; display: none;"></b>
+                    <img src="" _ti="37" >
+                    <b class="shadow sf" _ti="37" style="top: 173px; left: 0px; display: none;"></b>
                 </div>
-            
-                
                 <!--Regular if10-->
-            
-            
                 <a hidefocus="true" title="查看大图" id="showLocalImg" class="showLocalImg sign icon-search2" target="_blank" href="" _ti="37"></a>
-                <div id="showDetails" _ti="37" style="display: none;">
-                    <img id="showImgBig" src="" _ti="37" style="top: -346px; left: 0px;">
+                <div id="showDetails" _ti="37" style="display: none;" class="bf">
+                    <img id="showImgBig" src="" _ti="37" style="top: -346px; left: 0px;" class="bpic">
                 </div>
             </div>
-            
                     <dl class="PInfo PInfo-standout" _ti="37">
             
                         
@@ -583,7 +555,7 @@
                         
                         
                             <!--Regular list-->
-                                <span class="m-memberLabel" _ti="37">6.6折</span>
+                                <span class="m-memberLabel" _ti="37" id="zk"></span>
                             
             
                         <!--Regular if30-->
@@ -660,11 +632,7 @@
             
             
             <!--Regular if45-->
-            
-            
-            
-                            
-                            
+                
             <!--Regular if46-->
             
                 
@@ -893,9 +861,9 @@
               <span class="m-line-title fl m-line-am-30" _ti="37">数量</span>
               <em id="j_buyboxnum" class="buybox" name="js_buyBox" _ti="37">
                 <span class="ctrnum-wrap" _ti="37">
-                  <a hidefocus="true" class="ctrnum-b ctrnum-b-rd icon-minus ctrnum-b-dis" href="javascript:void(0);" _ti="37"></a>
+                  <a hidefocus="true" class="ctrnum-b ctrnum-b-rd icon-minus ctrnum-b-dis" href="javascript:void(0);" _ti="37" style="background-color: #fff;font-weight: bolder">－</a>
                   <input type="text" autocomplete="off" class="ctrnum-qty" name="goods[0].tempBuyAmount" _ti="37">
-                  <a hidefocus="true" class="ctrnum-b ctrnum-b-ad icon-plus" href="javascript:void(0);" _ti="37"></a>
+                  <a hidefocus="true" class="ctrnum-b ctrnum-b-ad icon-plus" href="javascript:void(0);" _ti="37">＋</a>
                 </span>
                 <span id="js_dometxt" class="domeTips" _ti="37"></span>
                 <span id="js_dome" class="dome hide" _ti="37"></span>
@@ -961,7 +929,7 @@
             
                 
                 <!--Regular if86-->
-                <a href="javascript:void(0)" hidefocus="true" class="j-buynow-btn" id="buyBtn" _ti="37">立即购买</a>
+                <a href="cart.html" hidefocus="true" class="j-buynow-btn" id="buyBtn" _ti="37">立即购买</a>
                 
             
                 
@@ -969,20 +937,7 @@
                 <!--Regular if87--><!--Regular if88--><!--Regular if89--> 
                 <a hidefocus="true" class="j-add2cart-btn" id="addCart" href="javascript:void(0);" _ti="37"><span class="sign icon-cart20 icon-cart" _ti="37"></span>加入购物车</a>
                 
-            
-            <a href="javascript:void(0)" class="m-favbtn m-favbtn-s" id="auto-id-1562548741511" _ti="37" style="visibility: visible;">
-              <i class="iconfont ic icon-heart" _ti="37" style="display: none;"></i>
-              <i class="iconfont ic icon-heart-hollow" _ti="37"></i>
-              <span class="txt" _ti="37">收藏</span>
-            </a>
-            
-                
-                
-            
-            
-                            
-                        
-                        
+              
                     </div>
             
                     
@@ -1063,9 +1018,24 @@
             </dd>
              </dl>
             </div>
-            
-                
+            </div>
             <!--Regular if99--><!--Regular if100-->
             </div>
+             
+            <!-- 点击购物弹出框 -->
+          <div id="gwk" style="width:450px;height:280px;border:1px solid #ccc;position:absolute;background:darkgrey;position: absolute;display: none">
+                <span style="position: absolute;top: 80px;right:120px;font-size: 26px;width: 220px;height:50px;line-height:50px;text-align:center">加入购物车成功</span>
+                <span class="close" style="position: absolute;top: 5px;right: 9px;cursor: pointer;color: red;font-size: 20px">X</span>
+                <a href="index.html" style="position: absolute;bottom:30px;left:80px;cursor: pointer;color:red;background:#ccc;font-size: 18px;width: 88px;height: 36px;line-height:36px;text-align:center">回到首页</a>
+                <a href="cart.html" style="position: absolute;bottom:30px;right:80px;cursor: pointer;color:red;background:#ccc;font-size: 18px;width: 88px;height: 36px;line-height:36px;text-align:center">去结算</a>
+          </div>
+   
+
+
+            <script src="script/thirdplugins/jquery.js"></script>
+            <script src="script/thirdplugins/jquery.cookie.js"></script>
+            <script src="script/js/datails.js"></script>
+        
+            
     </body>
     </html>

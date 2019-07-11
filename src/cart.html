@@ -20,7 +20,8 @@
 <body>
     <header id="docHead" class="j-indexTopFixed" _ti="1">
         <div id="docHeadWrap" _ti="1">
-            <a href="../src/img/logo.png" class="logokaola" title="网易考拉">
+            <a href="index.html" class="logokaola" title="网易考拉">
+                <img src="../src/img/logo.png" alt="">
             </a>
     </header>
 
@@ -29,7 +30,7 @@
     <div class="m-cartbox" _ti="15">
         <form method="post" action="/order/confirm.html?from=cart" id="cartForm" class="f-dn" _ti="15"></form>
         <div class="head f-cb" _ti="15">
-            <div class="col col1" _ti="15"><input type="checkbox" id="selectAll" name="selectAll" class="u-chk"
+            <div class="col col1" _ti="15"><input type="checkbox" checked="" id="selectAll" name="selectAll" class="u-chk select1 selectAll"
                     _ti="15"><label class="lab" for="selectAll" _ti="15">全选</label> </div>
             <div class="col col2" _ti="15">商品信息</div>
             <div class="col col3" _ti="15">单价(元)</div>
@@ -38,153 +39,94 @@
             <div class="col col6" _ti="15">操作</div>
         </div>
 
+        <!-- 无商品显示列别 -->
+        <div class="m-nocart" _ti="29">
+            <div class="wrap" _ti="29">
+            <!--Regular if19-->
+              <p _ti="29">购物车里空空如也，赶紧去&nbsp;<a href="index.html" _ti="29">逛逛吧&gt;</a></p>
+              <p _ti="29">或者您可以先进行&nbsp;<a href="login.html" _ti="29">登录&gt;</a></p>
+            </div>
+          </div>
+
         <!--inlcude-->
         <!--Regular list-->
         <div class="m-cart  " _ti="15">
-            <div class="ware" _ti="15">
-                <input type="checkbox" name="cartAll" class="u-chk" _ti="15">
-                <!--Regular if16-->
-                <strong class="warename" _ti="15"><a href="" target="_blank"
-                        _ti="15">2nd.R专营店</a></strong>
-            </div>
-            <!--Regular if17-->
-            <div class="m-carttip" _ti="15">
-                <span class="cnt" _ti="15">本店满88元包邮</span>
-                <!--Regular if18-->
-                <i class="u-icnft icon j-carttip" _ti="15"></i>
-                <div class="j-carttipshow" _ti="15" style="display: none;">本店满88元包邮（不含税费）<br
-                        _ti="15">不包邮地区：新疆维吾尔自治区、西藏自治区</div>
-
-                <a target="_blank" href="" class="link" _ti="15">去凑单 &gt;</a>
-            </div>
-
+    
             <div class="goods" _ti="15">
-                <ul class="m-goods" _ti="15">
-                    <!--Regular list-->
-                    <!--Regular if19-->
+                <ul class="m-goods goodslists" _ti="15">
 
-                    <li data-err="0" class="gooditm" _ti="15">
-                        <div class="col col0" _ti="15">
-                            <!--Regular if20-->
-                            <!--Regular if21-->
-                            <!--Regular if22-->
-                            <input type="checkbox" name="selectGood" class="u-chk" _ti="15">
-
-
-                        </div>
-                        <div class="col col2" _ti="15">
-                            <a class="imgwrap" target="_blank" href="" _ti="15">
-                                <img src="../src/img/e530e1d9-a47c.jpg"
-                                    _ti="15">
-
-                                <!--Regular if23-->
-                            </a>
-                            <div class="txtwrap" _ti="15">
-                                <h3 class="goodtlt" _ti="15">
-                                    <a title="【林允推荐】W.Lab 大福留 水光防晒乳液脸部身体防晒霜50ml" target="_blank"
-                                        href="" _ti="15">
-                                        <!--Regular list-->
-                                        <!--Regular if24-->
-                                        <!--Regular if25-->
-                                        【林允推荐】W.Lab 大福留 水光防晒乳液脸部身体防晒霜50ml
-                                    </a>
-                                </h3>
-                                <!--Regular if26-->
-                                <p title="支持7天无忧退货" class="returninfo f-toe" _ti="15">
-                                    <img src=" " _ti="15">
-                                    <span class="" _ti="15">支持7天无忧退货</span>
-                                </p>
-
-                                <div class="goodtax f-vama" _ti="15">
-
-                                    <!--Regular if27-->
-                                    <p _ti="15">
-                                        <!--inlcude-->
-                                        <!--Regular list-->
-                                        <span class="m-actlabel " id="auto-id-1562550777958" _ti="15">
-                                            <em _ti="15">特价 <i class="u-icnft arr icon-arrow-down" _ti="15"></i></em>
-                                            <span class="layer" _ti="15"><b class="u-lyarr" _ti="15"><i class="bd"
-                                                        _ti="15">◆</i><i class="bg" _ti="15">◆</i></b></span>
-                                        </span>
-                                    </p>
-
-                                    <!--Regular if28-->
-                                    <!--Regular if29-->
-                                    <!--Regular if30-->
-                                    <!--Regular if31-->
-                                </div>
-                                <!--Regular if32-->
-                            </div>
-                            <!--Regular if33-->
-                        </div>
-                        <div class="col col3" _ti="15">
-
-                            <!--Regular if34-->
-                            <!--Regular if35-->
-                            <!--Regular if36-->
-                            <del class="oldprice" _ti="15">129</del>
-                            <div class="newprice " _ti="15">
-                                <span _ti="15">76</span>
-                                <!--Regular if37-->
-                                <!--Regular if38-->
-                            </div>
-                            <!--Regular if39-->
-                            <!--Regular if40-->
-
-
-                        </div>
-                        <div class="col col4" _ti="15">
-                            <!--Regular if41-->
-                            <!--Regular if42-->
-                            <span class="u-setcount" _ti="15">
-                                <span class="minus z-dis" _ti="15"></span>
-                                <input type="text" max="99" min="1" data-value="1" autocomplete="off" class="ipt"
-                                    name="tempBuyAmount" _ti="15">
-                                <span class="plus" _ti="15"></span>
-                            </span>
-                            <!--Regular if43-->
-                            <p class="limitmsg" _ti="15"></p>
-
-
-                        </div>
-                        <div class="col col5" _ti="15">
-                            <!--Regular if44-->
-                            <span class="sum sumrow" _ti="15">76</span>
-
-                            <!--Regular if45-->
-                            <!--inlcude-->
-                            <!--Regular if46-->
-                            <p class="taxrow f-vama" _ti="15">
-                                <i data-tax="" data-vatrate="0" data-isvirtual="0" data-taxtype="0"
-                                    data-isspecificdutygoods="0" class="u-icnft ask j-taxrate icon-ask-hollow"
-                                    _ti="15"></i>
-                                <span class="u-taxval " _ti="15">预估税费:
-                                    ￥0
-                                </span>
-                                <!--Regular if47-->
+                <div class="goodslis" style="display: none" >
+                    <div class="m-carttip" _ti="15">
+                        <span class="cnt" _ti="15">本店满88元包邮</span>
+                        <i class="u-icnft icon j-carttip" _ti="15"></i>
+                        <a target="_blank" href="" class="link" _ti="15">去凑单 &gt;</a>
+                    </div>
+                <li data-err="0" class="gooditm" _ti="15">
+                    <div class="col col0 checksp" _ti="15">
+                        <input type="checkbox" checked="" name="selectGood" class="u-chk" _ti="15">
+                    </div>
+                    <div class="col col2" _ti="15">
+                        <a class="imgwrap" target="_blank" href="" _ti="15">
+                            <img src="" style="width:80px;height:80px"  _ti="15">
+                        </a>
+                        <div class="txtwrap" _ti="15">
+                            <h3 class="goodtlt" _ti="15">
+                                <a title="" target="_blank" style="color:black" href="" _ti="15">
+                                   
+                                </a>
+                            </h3>
+                            <p title="支持7天无忧退货" class="returninfo f-toe" _ti="15">
+                                <img src=" " _ti="15">
+                                <span class="" _ti="15">支持7天无忧退货</span>
                             </p>
-
-
-
+                            <div class="goodtax f-vama" _ti="15">
+                                <p _ti="15">
+                                    <span class="m-actlabel " id="auto-id-1562550777958" _ti="15">
+                                        <em _ti="15">特价 <i class="u-icnft arr icon-arrow-down" _ti="15"></i></em>
+                                        <span class="layer" _ti="15"><b class="u-lyarr" _ti="15"><i class="bd"
+                                                    _ti="15">◆</i><i class="bg" _ti="15">◆</i></b></span>
+                                    </span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="col col6" _ti="15">
-                            <!--Regular if48-->
-                            <a class="u-opt" _ti="15">删除</a>
-                            <span class="u-opt" _ti="15">移入我的收藏</span>
-
-                            <!--Regular if49-->
+                    </div>
+                    <div class="col col3" _ti="15">
+                        <del class="oldprice" _ti="15"></del>
+                        <div class="newprice " _ti="15">
+                            <span _ti="15" style="color:red"></span>
                         </div>
-                        <!--Regular if50-->
-                        <!--Regular if51-->
+                    </div>
+                    <div class="col col4" _ti="15">
+                        <span class="u-setcount" _ti="15">
+                            <span class="minus z-dis" _ti="15" style="font-size: 18px">－</span>
+                            <input type="text" value="" checked="" max="99" min="1" data-value="1" autocomplete="off" class="ipt"
+                                name="tempBuyAmount" _ti="15">
+                            <span class="plus add" _ti="15">＋</span>
+                        </span>
+                        <p class="limitmsg" _ti="15"></p>
+                    </div>
+                    <div class="col col5 zprice" _ti="15">
+                        <span class="sum sumrow" _ti="15" style="color:red"></span>
+                        <p class="taxrow f-vama" _ti="15">
+                            <i data-tax="" data-vatrate="0" data-isvirtual="0" data-taxtype="0"
+                                data-isspecificdutygoods="0" class="u-icnft ask j-taxrate icon-ask-hollow"
+                                _ti="15"></i>
+                            <span class="u-taxval " _ti="15">预估税费:
+                                ￥0
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col col6" _ti="15">
+                        <!--Regular if48-->
+                        <a class="u-opt" _ti="15">删除</a>
+                        <span class="u-opt" _ti="15">移入我的收藏</span>
+                    </div>
+                </li>
+                </div>
+                
 
-                        <!--Regular if52-->
-                    </li>
 
-                    <!--Regular if53-->
-
-
-
-                    <!--Regular list-->
+                    
                 </ul>
                 <div class="cartinfo" _ti="15">
                     <span class="discount" _ti="15">活动优惠：-￥0</span>
@@ -219,21 +161,25 @@
                 <!--Regular if64-->
                 <div class="ttbar" _ti="15">
                     <div class="lt" _ti="15">
-                        <input type="checkbox" class="u-chk" id="selectAll" name="selectAll" _ti="15"><label class="lab"
+                        <input type="checkbox" checked="" class="u-chk select2 selectAll" id="selectAll" name="selectAll" _ti="15"><label class="lab"
                             for="selectAll" _ti="15">全选</label><b class="opt" _ti="15">删除选中商品</b>
                         <!--Regular if65-->
                     </div>
                     <div class="rt" _ti="15">
-                        <p class="allgoods" _ti="15">已选商品 <em class="num" _ti="15">0</em> 件 <span class="itm"
-                                _ti="15">总价(不含运费)：<em class="num" _ti="15">￥0</em></span></p>
-                        <p class="allmoney" _ti="15">活动优惠：-￥0<span class="itm" _ti="15">商品应付总计：￥0</span><span
-                                class="itm" _ti="15">商品税费（不含运费税）：￥0</span></p>
+                        <p class="allgoods" _ti="15">已选商品 <em class="num spnum" _ti="15">0</em> 件 <span class="itm"
+                                _ti="15">总价(不含运费)：<em class="num spprice" _ti="15">￥0</em></span></p>
+                        <p class="allmoney" _ti="15">活动优惠：-￥0<span class="itm allprice" _ti="15">商品应付总计：￥0</span><span
+                                class="itm " _ti="15">商品税费（不含运费税）：￥0</span></p>
                         <a class="gobuy z-disable" _ti="15">去结算</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+    
+</body>
+      <script src="script/thirdplugins/jquery.min.js"></script>
+      <script src="script/thirdplugins/jquery.cookie.js"></script>
+      <script src="script/js/cart.js"></script>
 </html>

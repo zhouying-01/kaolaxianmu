@@ -127,7 +127,7 @@ img-list>li {
 
 }
 
-#goodslists {
+.goodslists {
     width: 100%;
 }
 
@@ -154,9 +154,9 @@ img-list>li {
     overflow: visible;
     position: relative;
     width: 20%;
-    height: 284px;
     box-sizing: border-box;
     float: left;
+    
 }
 .m-goods1005-panel .goods-list>li img {
     width: 192px;
@@ -369,5 +369,40 @@ color: #333
     height: 100px;
 }
 .showpics{
+    display: none;
+    
+}
+
+/* 侧边栏导航 */
+.m-sidebar {
+    position: fixed;
+    right: 2%;
+    top: 200px;
+    z-index: 100;
+    width: 100px;
+    transition: all .2s linear;
     display: none
+}
+.m-sidebar .m-navlist {
+    background-color: rgb(240, 48, 72);
+}
+.m-navlist a{
+color: rgb(255, 255, 255);
+width: 100px;
+height: 100%;
+display: block;
+border-bottom: 1px solid rgba(0,0,0,.2);
+line-height: 31px;
+font-size: 12px; 
+text-align: center;
+text-decoration: none
+}
+.m-navlist .nav-bottom-item{
+    line-height: 35px;
+}
+.z-selected{
+    background: rgba(0,0,0,.25);
+}
+.nav-item,.nav-bottom-item{
+    cursor: pointer;
 }
