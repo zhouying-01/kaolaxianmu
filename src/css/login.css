@@ -74,13 +74,17 @@
     height: 52px;
     width: 175px;
     text-align: center;
-    font-weight: bolder
+    font-weight: bolder;
+    cursor: pointer;
+}
+.email{
+    color: red
 }
 .regtop .tel{
-    float: left;
+    float: right;
 }
 .regtop .email{
-    float: right;
+    float: left;
 }
 
 .m-cnt{
@@ -99,9 +103,9 @@
     background: url(../img/6315f6c8-5227-4ca5-9e45-e21557db8eb5_84_125.png) no-repeat -55px -26px;
 }
 .m-cnt p:nth-child(2){
-    margin: 16px 0px 24px 0px;
+    margin: 16px 0px 4px 0px;
 }
-#dologin{
+.dologin{
     height: 36px;
     background-color: #E31436;
     color: #fff;
@@ -112,7 +116,7 @@
     text-align: center;
     text-decoration: none;
 }
-#auto-id{
+.auto-id{
     height: 31px;
     margin-top:8px;
     color: #999;
@@ -127,7 +131,7 @@
     width: 120px;
     height: 16px;
 }
-#auto-id .forgetpwd{
+.auto-id .forgetpwd{
     float: right;
     color: #999;
 }
@@ -208,4 +212,19 @@ background-position: -760px -401px;
  #telphone .getsm:hover{
 color: #e31436;
 background-color: #f6f6f6;
+}
+
+
+
+#telphone{
+    display: none
+}
+
+.tswz{
+    display: inline-block;
+    width: 270px;
+    height: 18px;
+    color: red;
+    font-weight: bold;
+    padding: 0px 0px 5px 30px;
 }

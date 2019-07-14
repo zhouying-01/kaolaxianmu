@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="../src/css/login.css">
 </head>
-
 <body>
+    
     <header id="docHead">
         <div id="docHeadWrap">
             <a href="index.html" class="logokaola " title="网易考拉"></a>
@@ -28,41 +27,69 @@
             <div id="topimg"></div>
         </div>
     </header>
-    <section class="login-banner">
+
+    <div class="login-banner">
         <div class="login-body">
             <a href="#" class="hot-area">
                 <img src="../src/img/eaf0275f-15af-4873-87b6-7efa5fce7b59_400_203.png" alt="">
             </a>
 
-
-            <!-- <section class="reg" id="email">
+            <div class="reg">
                 <div class="regtop">
-                    <span class="tel">手机号登录</span>
-                    <span class="email">邮箱登录</span>
+                        <span class="email">账号登录</span>
+                        <span class="tel">手机登录</span>
                 </div>
-                <div class="m-cnt">
-                    <form id="login-form">
+                <!-- 邮箱登录 -->
+                <div class="m-cnt" id="email">
+                    <form class="login-form" action="" method="POST">
                         <p>
-                        <input type="text" placeholder="网易邮箱账号">
+                            <input type="text" placeholder="网易邮箱账号\用户名\手机号" name="name" class="username">
                         </p>
                         <p>
-                            <input type="password" placeholder="密码">
+                            <input type="password" placeholder="密码" name="password" class="password">
                         </p>
-                        <span></span>
-                        <a href="#" id="dologin">登&nbsp&nbsp录</a>
-                        <div id="auto-id">
+                        <span class="tswz"></span>
+                        <a href="javascript: ;" class="dologin">登&nbsp&nbsp录</a>
+                        <div class="auto-id">
                             <div class="b-unlogn">
                                 <input type="checkbox" name="un-login" class="un-login">
-                                <label for="un-login" id="auto-log">10天免登录</label>
+                                <label for="un-login" class="auto-log">10天免登录</label>
                             </div>
                             <a href="#" class="forgetpwd">忘记密码？</a>
                         </div>
                     </form>
                     <div class="proto">
-                            登录即代表您已同意<a href="#">“隐私权相关政策”</a>
+                        登录即代表您已同意<a href="#">“隐私权相关政策”</a>
                     </div>
                 </div>
-                <section class="bottom">
+                <!-- 手机登录 -->
+                <div class="m-cnt" id="telphone">
+                        <form class="login-form" action="http://10.31.158.49/kaolaxianmu/php/login.php">
+                            <p>
+                                <input type="text" placeholder="手机号">
+                            </p>
+                            <p>
+                                <input type="password" placeholder="请输入短信验证码" class="inputbox">
+                                <span class="getsm">获取验证码</span>
+                            </p>
+                            <span class="tswz"></span>
+                            <a href="javascript: ;" class="dologin">登&nbsp&nbsp录</a>
+                            <div class="auto-id">
+                                <div class="b-unlogn">
+                                    <input type="checkbox" name="un-login" class="un-login">
+                                    <label for="un-login" class="auto-log">10天免登录</label>
+                                </div>
+                                <a href="#" class="forgetpwd">遇到问题？</a>
+                            </div>
+                        </form>
+                        <div class="proto">
+                            登录即代表您已同意<a href="#">“隐私权相关政策”</a>
+                        </div>
+                </div>
+
+
+
+                <div class="bottom">
                     <ul class="thirdlogin">
                         <li class="thirdicon">
                             <a href="javascript:;" class="w-icon w-icon-26"></a>
@@ -80,60 +107,15 @@
                     <a href="registor.html" class="gotoreg">手机快捷注册
                         <span class=" w-icon w-icon-30">&nbsp;</span>
                     </a>
-            </section> -->
+                </div>
 
-            <!-- 手机登录 -->
-            <section class="reg" id="telphone">
-                    <div class="regtop">
-                        <span class="tel">手机号登录</span>
-                        <span class="email">邮箱登录</span>
-                    </div>
-                    <div class="m-cnt">
-                        <form id="login-form">
-                            <p>
-                            <input type="text" placeholder="手机号">
-                            </p>
-                            <p>
-                                <input type="password" placeholder="请输入短信验证码" class="inputbox">
-                                <span class="getsm">获取验证码</span>
-                            </p>
-                            <span></span>
-                            <a href="#" id="dologin">登&nbsp&nbsp录</a>
-                            <div id="auto-id">
-                                <div class="b-unlogn">
-                                    <input type="checkbox" name="un-login" class="un-login">
-                                    <label for="un-login" id="auto-log">10天免登录</label>
-                                </div>
-                                <a href="#" class="forgetpwd">遇到问题？</a>
-                            </div>
-                        </form>
-                        <div class="proto">
-                                登录即代表您已同意<a href="#">“隐私权相关政策”</a>
-                        </div>
-                    </div>
-                    <section class="bottom">
-                        <ul class="thirdlogin">
-                            <li class="thirdicon">
-                                <a href="javascript:;" class="w-icon w-icon-26"></a>
-                            </li>
-                            <li class="thirdicon">
-                                <a href="javascript:;" class="w-icon w-icon-27"></a>
-                            </li>
-                            <li class="thirdicon">
-                                <a href="javascript:;" class="w-icon w-icon-28"></a>
-                            </li>
-                            <li class="thirdicon">
-                                <a href="javascript:;" class="w-icon w-icon-29"></a>
-                            </li>
-                        </ul>
-                        <a href="registor.html" class="gotoreg">手机快捷注册
-                            <span class=" w-icon w-icon-30">&nbsp;</span>
-                        </a>
-                </section>
+            </div>
+
         </div>
-    </section>
+    </div>
 
-    </section>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/thirdplugins/jquery.cookie.js"></script>
+    <script src="script/js/login.js"></script>
 </body>
-
 </html>

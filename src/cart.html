@@ -28,14 +28,15 @@
     <!-- 购物栏 -->
 
     <div class="m-cartbox" _ti="15">
-        <form method="post" action="/order/confirm.html?from=cart" id="cartForm" class="f-dn" _ti="15"></form>
+        <form method="post"  id="cartForm" class="f-dn"></form>
         <div class="head f-cb" _ti="15">
-            <div class="col col1" _ti="15"><input type="checkbox" checked="" id="selectAll" name="selectAll" class="u-chk select1 selectAll"
+            <div class="col col1" _ti="15">
+                <input type="checkbox" checked="" id="selectAll" name="selectAll" class="u-chk select1 selectAll"
                     _ti="15"><label class="lab" for="selectAll" _ti="15">全选</label> </div>
-            <div class="col col2" _ti="15">商品信息</div>
+            <div class="col col2" _ti="15">商品</div>
             <div class="col col3" _ti="15">单价(元)</div>
             <div class="col col4" _ti="15">数量</div>
-            <div class="col col5" _ti="15">金额(元)</div>
+            <div class="col col5" _ti="15">小计</div>
             <div class="col col6" _ti="15">操作</div>
         </div>
 
@@ -103,7 +104,6 @@
                                 name="tempBuyAmount" _ti="15">
                             <span class="plus add" _ti="15">＋</span>
                         </span>
-                        <p class="limitmsg" _ti="15"></p>
                     </div>
                     <div class="col col5 zprice" _ti="15">
                         <span class="sum sumrow" _ti="15" style="color:red"></span>

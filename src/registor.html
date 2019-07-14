@@ -42,46 +42,46 @@
                     </span>
                 </div>
                 <div class="m-cnt">
-                    <form id="login-form">
+                    <form id="login-form" action="http://10.31.158.49/kaolaxianmu/php/reg.php" method="POST">
                         <p>
                             <label for=""><span>*</span>用户名：</label>
-                            <input type="text">
+                            <input type="text" placeholder="请输入用户名" name="username">
                             <span class="span"></span>
                         </p>
                         <p>
                             <label for=""><span>*</span>邮箱：</label>
-                            <input type="text">
+                            <input type="text" placeholder="请输入邮箱" name="email">
                             <span class="span"></span>
                         </p>
                         <p>
                             <label for=""><span>*</span>设置密码：</label>
-                            <input type="text">
+                            <input type="password" placeholder="请输入密码" name="password">
                             <span class="span"></span>
                         </p>
                         <p>
                             <label for=""><span>*</span>确认密码：</label>
-                            <input type="text">
+                            <input type="password" placeholder="请再次输入密码">
                             <span class="span"></span>
                         </p>
                         <p>
                             <label for=""><span>*</span>手机号码：</label>
-                            <input type="text">
+                            <input type="text" placeholder="请输入手机号" name="tel">
                             <span class="span"></span>
                         </p>
                         <p>
                             <label for=""><span>*</span>图形验证码：</label>
-                            <input type="text" class="yzm">
+                            <input type="text" class="yzm" placeholder="请输入验证码">
                             <i class="oBox"></i>
                             <b>看不清楚？</b><a href="javascripy: ;" class="oa">换一张</a>
                             <span class="span pic"></span>
                         </p>
-                        <p><input type="submit" value="注册"></p>
+                        <p><input type="submit" value="注册" name="submit" class="submit"></p>
                     </form>
                 </div>
             </section>
         </div>
     </section>
-    <script src="script/thirdplugins/jquery.min.js"></script>
+    <script src="script/thirdplugins/jquery.js"></script>
     <script src="script/js/registor.js"></script>
 </body>
 

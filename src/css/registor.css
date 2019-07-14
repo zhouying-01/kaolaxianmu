@@ -103,14 +103,15 @@ label{
     font-size: 12px;
 }
 label>span{
-    color: red
+    color: red;
+    
 }
 .span{
     display: inline-block;
-    width: 100px;
-    height: 28px;
+    width: 112px;
+    height: 20px;
     vertical-align: top;
-    line-height: 28px
+    line-height: 20px
 }
 .pic{
     margin-left: 80px;
@@ -139,7 +140,7 @@ input:last-child{
     height: 30px;
     width: 250px;
     cursor: pointer;
-    margin: 5px 0 0 27px;
+    margin: 20px 0 0 27px;
 }
 b{
     font-size: 12px;
@@ -152,4 +153,21 @@ a{
 }
 .yzm{
     width: 70px
+}
+
+.span1{
+    font-size:11px;
+    color:white;
+    text-align:center;
+    background:red;
+    width:30px;
+    height:20px;
+    line-height:20px;
+    vertical-align:middle;
+    margin: 10px;
+    margin: 0!important;
+}
+.span2{
+    font-size:11px;
+    color:red
 }

@@ -132,7 +132,7 @@
     });
     $('#addCart').on('click', function () {
         //点击加入购物车按钮，将商品数量加入cookie
-
+        alert('成功加入购物车');
         cookievalue(); //查看是否有存在的cookie值
         if ($.inArray($sid, arrsid) != -1) {
             //存在值就想加

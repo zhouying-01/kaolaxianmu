@@ -74,7 +74,7 @@
 				  $strhtml+=`
 				  <li class="g-col">
                         <a href="datails.html?sid=${data[i].picid}">
-                            <img src="${data[i].imgurls}" alt="">
+                            <img class="lazy" data-original="${data[i].imgurls}" width="192" height="192" alt="">
                         </a>
                         <h3 class="goods-title">
                             <a href="datails.html?sid=${data[i].picid}">
@@ -89,19 +89,11 @@
                         </div>
                     </li>
 				  `;
+					
 			  }
 			  $('.goods-list').html($strhtml);
+			  $('img.lazy').lazyload({effect: "fadeIn"})
 		})
-	// //tab切换数据
-	// $.ajax({
-	// 	url:'php/banner.php',
-	// 	dataType:'json'
-	// }).done(function(bannerdata){
-	// 	$.each(bannerdata,function(index,value){
-	// 		var $bannerstr='<ul>';
-			
-	// 	});
-	// });
 }(jQuery);
 
 // 楼梯效果
@@ -145,12 +137,16 @@
 }();
 
 
-// !function(){
-// 	//lunbo效果
+//  用户名显示
+ !function($){
+      if($.cookie('username')){
+		  $('#topNavLeft').hide();
+		  $('.logindl').show().css('float','left');
+		  $('.logindl-mz').html($.cookie('username'));
+	  }
+	  $('.close').on('click',function(){
+		$('#topNavLeft').show();
+		$('.logindl').hide();
+	  })
 	
-// }(jQuery);
-
-// !function(){
-// 	//小效果
-	
-// }(jQuery);
+ }(jQuery);

@@ -74,20 +74,11 @@
 	}).done(function (data) {
 		var $strhtml = '';
 		for (var i = 0; i < data.length; i++) {
-			$strhtml += "\n\t\t\t\t  <li class=\"g-col\">\n                        <a href=\"datails.html?sid=" + data[i].picid + "\">\n                            <img src=\"" + data[i].imgurls + "\" alt=\"\">\n                        </a>\n                        <h3 class=\"goods-title\">\n                            <a href=\"datails.html?sid=" + data[i].picid + "\">\n\t\t\t\t\t\t\t" + data[i].title + "\n                            </a>\n                        </h3>\n                        <h6 class=\"goods-introduce\"> " + data[i].goodsintroduce + " </h6>\n                        <div class=\"m-priceitem\">\n                            <span class=\"price\"><i class=\"rmb\">\xA5</i>" + data[i].price + "</span>\n                            <span class=\"mktprice\"><del>\uFFE5" + data[i].nowprice + "</del></span>\n                            <a href=\"datails.html?sid=" + data[i].picid + "\" class=\"goods-btn\">\u7ACB\u5373\u8D2D\u4E70</a>\n                        </div>\n                    </li>\n\t\t\t\t  ";
+			$strhtml += "\n\t\t\t\t  <li class=\"g-col\">\n                        <a href=\"datails.html?sid=" + data[i].picid + "\">\n                            <img class=\"lazy\" data-original=\"" + data[i].imgurls + "\" width=\"192\" height=\"192\" alt=\"\">\n                        </a>\n                        <h3 class=\"goods-title\">\n                            <a href=\"datails.html?sid=" + data[i].picid + "\">\n\t\t\t\t\t\t\t" + data[i].title + "\n                            </a>\n                        </h3>\n                        <h6 class=\"goods-introduce\"> " + data[i].goodsintroduce + " </h6>\n                        <div class=\"m-priceitem\">\n                            <span class=\"price\"><i class=\"rmb\">\xA5</i>" + data[i].price + "</span>\n                            <span class=\"mktprice\"><del>\uFFE5" + data[i].nowprice + "</del></span>\n                            <a href=\"datails.html?sid=" + data[i].picid + "\" class=\"goods-btn\">\u7ACB\u5373\u8D2D\u4E70</a>\n                        </div>\n                    </li>\n\t\t\t\t  ";
 		}
 		$('.goods-list').html($strhtml);
+		$('img.lazy').lazyload({ effect: "fadeIn" });
 	});
-	// //tab切换数据
-	// $.ajax({
-	// 	url:'php/banner.php',
-	// 	dataType:'json'
-	// }).done(function(bannerdata){
-	// 	$.each(bannerdata,function(index,value){
-	// 		var $bannerstr='<ul>';
-
-	// 	});
-	// });
 }(jQuery);
 
 // 楼梯效果
@@ -130,12 +121,15 @@
 	});
 }();
 
-// !function(){
-// 	//lunbo效果
-
-// }(jQuery);
-
-// !function(){
-// 	//小效果
-
-// }(jQuery);
+//  用户名显示
+!function ($) {
+	if ($.cookie('username')) {
+		$('#topNavLeft').hide();
+		$('.logindl').show().css('float', 'left');
+		$('.logindl-mz').html($.cookie('username'));
+	}
+	$('.close').on('click', function () {
+		$('#topNavLeft').show();
+		$('.logindl').hide();
+	});
+}(jQuery);
